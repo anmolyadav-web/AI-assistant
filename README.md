@@ -67,3 +67,4 @@ ai-academic-assistant
 - `POST /api/notes`
 - `POST /api/professor`
 
+
