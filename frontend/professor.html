@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professor Mode</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container page-card">
+    <a class="back" href="index.html">← Back to Home</a>
+    <h1>Professor Mode (Exam Predictor)</h1>
+
+    <label>Syllabus Text
+      <textarea id="prof-syllabus" rows="5" placeholder="Paste syllabus"></textarea>
+    </label>
+
+    <label>Previous Year Questions
+      <textarea id="prof-papers" rows="5" placeholder="Paste previous questions"></textarea>
+    </label>
+
+    <label>Lecture Notes
+      <textarea id="prof-notes" rows="5" placeholder="Paste lecture notes"></textarea>
+    </label>
+
+    <button onclick="runProfessorMode()">Predict Exam Insights</button>
+
+    <pre id="prof-output" class="output"></pre>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
