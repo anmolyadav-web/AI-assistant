@@ -23,10 +23,3 @@ app.get('/health', (_req, res) => {
   res.json({ status: 'ok' });
 });
 
-if (process.env.VERCEL) {
-  module.exports = app;
-} else {
-  app.listen(PORT, () => {
-    console.log(`AI Academic Assistant running on http://localhost:${PORT}`);
-  });
-}
