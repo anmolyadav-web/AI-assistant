@@ -59,7 +59,6 @@ ai-academic-assistant
    ```
 4. Open app at `http://localhost:3000`
 
-> If no `GEMINI_API_KEY` is set, the app runs in demo mode with mock AI responses.
 
 ## API Endpoints
 
@@ -67,3 +66,4 @@ ai-academic-assistant
 - `POST /api/viva/evaluate`
 - `POST /api/notes`
 - `POST /api/professor`
+

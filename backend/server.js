@@ -23,6 +23,3 @@ app.get('/health', (_req, res) => {
   res.json({ status: 'ok' });
 });
 
-app.listen(PORT, () => {
-  console.log(`AI Academic Assistant running on http://localhost:${PORT}`);
-});
