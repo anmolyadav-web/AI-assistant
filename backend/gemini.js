@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || 'ALzaSyD-5GA4BCQTBGhzfn4DSfpR8q8Q3dOPPUU';
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-1.5-flash';
 
 async function generateWithGemini(prompt) {
