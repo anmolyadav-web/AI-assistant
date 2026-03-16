@@ -52,11 +52,7 @@ ai-academic-assistant
    ```bash
    npm install
    ```
-2. Create `.env` file from `.env.example` (optional for real AI responses):
-   ```bash
-   cp .env.example .env
-   ```
-   Then set your real key in `.env`.
+
 3. Run server:
    ```bash
    npm start
