@@ -1,0 +1,87 @@
+:root {
+  --primary: #4f46e5;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #111827;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.tool-card,
+.page-card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+.tool-card {
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+}
+
+.page-card {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+}
+
+label { font-weight: 600; display: flex; flex-direction: column; gap: .35rem; }
+input, textarea, button {
+  font: inherit;
+  padding: .7rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover { opacity: .92; }
+
+.back {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.output {
+  background: #f1f5f9;
+  padding: .8rem;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  min-height: 140px;
+}
