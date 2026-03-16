@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viva Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container page-card">
+    <a class="back" href="index.html">← Back to Home</a>
+    <h1>AI Viva Simulator</h1>
+
+    <label>Subject
+      <input id="viva-subject" placeholder="e.g., Electronics" />
+    </label>
+
+    <label>Topic
+      <input id="viva-topic" placeholder="e.g., Zener Diode" />
+    </label>
+
+    <button onclick="generateVivaQuestion()">Generate Viva Question</button>
+
+    <label>Current Question
+      <textarea id="viva-question" rows="3" placeholder="Generated question will appear here"></textarea>
+    </label>
+
+    <label>Your Answer
+      <textarea id="viva-answer" rows="4" placeholder="Type your answer"></textarea>
+    </label>
+
+    <button onclick="submitVivaAnswer()">Submit Answer</button>
+
+    <pre id="viva-output" class="output"></pre>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
