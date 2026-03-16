@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lecture Notes Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container page-card">
+    <a class="back" href="index.html">← Back to Home</a>
+    <h1>Lecture Notes Generator</h1>
+
+    <label>Paste Lecture Text
+      <textarea id="notes-lecture" rows="8" placeholder="Paste lecture text here"></textarea>
+    </label>
+
+    <label>Or Upload PDF
+      <input id="notes-file" type="file" accept="application/pdf" />
+    </label>
+
+    <button onclick="generateNotes()">Generate Notes</button>
+
+    <pre id="notes-output" class="output"></pre>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
