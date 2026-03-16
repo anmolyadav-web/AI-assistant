@@ -52,12 +52,7 @@ ai-academic-assistant
    ```bash
    npm install
    ```
-2. Create `.env` file (optional for real AI responses):
-   ```env
-   GEMINI_API_KEY=your_api_key_here
-   GEMINI_MODEL=gemini-1.5-flash
-   PORT=3000
-   ```
+
 3. Run server:
    ```bash
    npm start
